@@ -1,0 +1,19 @@
+{
+    "name": "sayat/burgers",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Sayat",
+            "email": "sayat23@mail.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"App\\": "app/"}
+    },
+    "require": {
+        "symfony/dotenv": "^4.1",
+        "swiftmailer/swiftmailer": "^6.1",
+        "twig/twig": "^2.4",
+        "true/punycode": "^2.1"
+    }
+}

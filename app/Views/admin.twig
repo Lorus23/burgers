@@ -1,0 +1,46 @@
+<h2>Список пользователей:</h2>
+<table border="2">
+    <tr>
+        <th>Имя пользователя</th>
+        <th>Электронная почта</th>
+        <th>Телефон</th>
+    </tr>
+    {% for item in data %}
+        <tr>
+            <td>{{ item.username }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.phone }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+<br>
+<h2>Список заказов:</h2>
+<table>
+    <tr>
+        <th>Имя пользователя</th>
+        <th>Улица</th>
+        <th>Дом</th>
+        <th>Корпус</th>
+        <th>Квартира</th>
+        <th>Этаж</th>
+        <th>Комментарий</th>
+        <th>Потребуется сдача</th>
+        <th>Оплата по карте</th>
+        <th>Не перезванивать</th>
+    </tr>
+     {% for item in orders %}
+        <tr>
+            <td>{{ item.user_id }}</td>
+            <td>{{ item.street }}</td>
+            <td>{{ item.home }}</td>
+            <td>{{ item.part }}</td>
+            <td>{{ item.appt }}</td>
+            <td>{{ item.floor }}</td>
+            <td>{{ item.comment }}</td>
+            <td>{{ item.payment1 }}</td>
+            <td>{{ item.payment2 }}</td>
+            <td>{{ item.callback }}</td>
+        </tr>
+    {% endfor %}
+</table>
