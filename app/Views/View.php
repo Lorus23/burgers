@@ -17,7 +17,6 @@ class View
         echo $this->twig->render($filename . ".twig", $data);
     }
 
-
     public function __construct($data = [])
     {
         $this->loader = new \Twig_Loader_Filesystem(APPLICATION_PATH.'/Views');

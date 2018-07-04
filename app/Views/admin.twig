@@ -5,11 +5,11 @@
         <th>Электронная почта</th>
         <th>Телефон</th>
     </tr>
-    {% for users in data %}
+    {% for data in users %}
         <tr>
-            <td>{{ users.username }}</td>
-            <td>{{ users.email }}</td>
-            <td>{{ users.phone }}</td>
+            <td>{{ data.username }}</td>
+            <td>{{ data.email }}</td>
+            <td>{{ data.phone }}</td>
         </tr>
     {% endfor %}
 </table>
@@ -29,18 +29,18 @@
         <th>Оплата по карте</th>
         <th>Не перезванивать</th>
     </tr>
-     {% for orders in data %}
+     {% for  data in orders  %}
         <tr>
-            <td>{{ orders.user_id }}</td>
-            <td>{{ orders.street }}</td>
-            <td>{{ orders.home }}</td>
-            <td>{{ orders.part }}</td>
-            <td>{{ orders.appt }}</td>
-            <td>{{ orders.floor }}</td>
-            <td>{{ orders.comment }}</td>
-            <td>{{ orders.payment1 }}</td>
-            <td>{{ orders.payment2 }}</td>
-            <td>{{ orders.callback }}</td>
+            <td>{{ data.user_id }}</td>
+            <td>{{ data.street }}</td>
+            <td>{{ data.home }}</td>
+            <td>{{ data.part }}</td>
+            <td>{{ data.appt }}</td>
+            <td>{{ data.floor }}</td>
+            <td>{{ data.comment }}</td>
+            <td>{{ data.payment1 }}</td>
+            <td>{{ data.payment2 }}</td>
+            <td>{{ data.callback }}</td>
         </tr>
     {% endfor %}
 </table>
