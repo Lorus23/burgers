@@ -13,13 +13,13 @@ class User extends Db
         $db = Db::getConnection();
         // Текст запроса к БД
         $sql = 'SELECT username, email, phone FROM users';
-
         // Получение результатов. Используется подготовленный запрос
+
         $result = $db->prepare($sql);
 
         $result->execute();
-        return $result->fetch(PDO::FETCH_ASSOC);
-
+        $result = $result->fetchAll(PDO::FETCH_ASSOC);
+        return $result;
     }
 
     public static function checkEmailExists($email)

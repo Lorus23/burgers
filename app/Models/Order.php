@@ -16,7 +16,7 @@ class Order extends Db
         // Получение результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
           $result->execute();
-        return $result->fetch(PDO::FETCH_ASSOC);
+        return $result->fetchAll(PDO::FETCH_ASSOC);
 
 
 

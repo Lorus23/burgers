@@ -10,8 +10,8 @@ class AdminController extends MainController
     public function index()
     {
 
-        $users = User::usersList();
-        $orders = Order::orders();
+        $users   = User::usersList();
+        $orders   = Order::orders();
         $data = ['users' => $users, 'orders' => $orders];
 
         $this->view->twigLoad('admin', $data);

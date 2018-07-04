@@ -35,7 +35,7 @@
                                 <li class="nav__item"><a class="nav__link" href="7">контакты</a>
                                 </li>
                                 <li class="nav__item" style="color:#ffff00"><?php if (isset($_SESSION)) {
-                                        echo 'Привет '.$_SESSION['username'];
+                                        echo 'Hi '.$_SESSION['username'];
                                     }
                                     ?>
                                 </li>
